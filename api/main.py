@@ -9,3 +9,7 @@ def hello():
 @app.get("/sane")
 def hello():
     return {"message": "I am working sane!"}
+
+@app.get("/ping")
+def hello():
+    return {"message": "pong"}
