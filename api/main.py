@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def hello():
-    return {"message": "Hello World from FastAPI on Vercel!"}
+    return {"message": "Hello World from Vercel!"}
 
 @app.get("/sane")
 def hello():
