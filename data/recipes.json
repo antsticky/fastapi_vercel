@@ -1,7 +1,7 @@
 {
     "1": {
         "name": "Chocolate Orange Cake",
-        "images": [],
+        "images": ["1/chocolate.png"],
         "categories": [
             "dessert",
             "cake",
