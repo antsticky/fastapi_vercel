@@ -1,13 +1,4 @@
 import json
-from pathlib import Path
-from typing import Dict
-
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-
-from api.DataModels.recipe import Recipe
-
-import json
 import base64
 import os
 import requests
@@ -15,15 +6,19 @@ from typing import Dict, List
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
-
 from pydantic import BaseModel
 
+from api.DataModels.recipe import Recipe
+
+
+# -----------------------------
+# FastAPI App
+# -----------------------------
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allow all frontend origins
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -63,7 +58,6 @@ def load_recipes_from_github():
         response = requests.get(API_URL, headers=headers)
         print("GitHub GET status:", response.status_code)
 
-        # If GitHub returns 200 and contains "content"
         if response.status_code == 200:
             data = response.json()
             if "content" in data:
@@ -81,7 +75,6 @@ def load_recipes_from_github():
         print("Exception while loading from GitHub:", e)
         raw = {}
 
-    # Convert to Pydantic models
     try:
         recipes_db = {int(k): Recipe(**v) for k, v in raw.items()}
     except Exception as e:
@@ -89,7 +82,6 @@ def load_recipes_from_github():
         recipes_db = {}
 
     current_id = max(recipes_db.keys(), default=0) + 1
-
 
 
 def save_recipes_to_github():
@@ -105,7 +97,6 @@ def save_recipes_to_github():
             "Accept": "application/vnd.github+json"
         }
 
-        # Get SHA if file exists
         sha = None
         sha_response = requests.get(API_URL, headers=headers)
         print("GitHub SHA status:", sha_response.status_code)
@@ -134,8 +125,7 @@ def save_recipes_to_github():
         return {"error": str(e)}
 
 
-
-# Load recipes at cold start
+# Load recipes at startup
 load_recipes_from_github()
 
 
@@ -144,7 +134,7 @@ load_recipes_from_github()
 # -----------------------------
 @app.get("/")
 def hello():
-    return {"message": "Hello from Vercel FastAPI!"}
+    return {"message": "Hello from FastAPI!"}
 
 
 @app.get("/ping")
@@ -174,9 +164,3 @@ def create_recipe(recipe: Recipe):
     response = {"id": current_id, "message": "Recipe created successfully"}
     current_id += 1
     return response
-
-
-# -----------------------------
-# Vercel Handler
-# -----------------------------
-handler = Mangum(app)
