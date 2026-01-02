@@ -24,10 +24,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-# -----------------------------
-# GitHub Storage Config
-# -----------------------------
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 REPO_OWNER = "antsticky"
 REPO_NAME = "fastapi_vercel"
@@ -36,16 +32,10 @@ FILE_PATH = "data/recipes.json"
 API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{FILE_PATH}"
 
 
-# -----------------------------
-# In-memory DB
-# -----------------------------
 recipes_db: Dict[int, Recipe] = {}
 current_id = 1
 
 
-# -----------------------------
-# GitHub Helpers
-# -----------------------------
 def load_recipes_from_github():
     global recipes_db, current_id
 
