@@ -351,5 +351,142 @@
             "Simmer the remaining marinade with vegetable stock and marmalade until thick and glossy.",
             "Pour the sticky glaze over the pork, shred the meat and serve with rice or warm tortillas."
         ]
+    },
+    "6": {
+        "name": "Mary Berry's Easy Sticky Toffee Pudding",
+        "images": [],
+        "categories": [
+            "dessert",
+            "pudding",
+            "baked",
+            "sweet",
+            "vegetarian"
+        ],
+        "ingredients": [
+            {
+                "name": "Butter, softened",
+                "quantity": "100 g"
+            },
+            {
+                "name": "Light muscovado sugar",
+                "quantity": "175 g"
+            },
+            {
+                "name": "Free‑range eggs",
+                "quantity": "2 large"
+            },
+            {
+                "name": "Self‑raising flour",
+                "quantity": "225 g"
+            },
+            {
+                "name": "Baking powder",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Bicarbonate of soda",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Black treacle",
+                "quantity": "3 tbsp"
+            },
+            {
+                "name": "Full‑fat milk",
+                "quantity": "275 ml"
+            },
+            {
+                "name": "Cream or vanilla ice cream",
+                "quantity": "to serve"
+            },
+            {
+                "name": "Butter (for sauce)",
+                "quantity": "100 g"
+            },
+            {
+                "name": "Light muscovado sugar (for sauce)",
+                "quantity": "125 g"
+            },
+            {
+                "name": "Black treacle (for sauce)",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Pouring double cream",
+                "quantity": "300 ml"
+            },
+            {
+                "name": "Vanilla extract",
+                "quantity": "1 tsp"
+            }
+        ],
+        "steps": [
+            "Preheat the oven and grease a shallow baking dish.",
+            "Place butter, sugar, eggs, flour, baking powder, bicarbonate of soda and treacle into a bowl. Whisk briefly until combined.",
+            "Gradually add the milk and whisk again until the batter is smooth.",
+            "Pour the mixture into the prepared dish and bake until risen and springy.",
+            "For the sauce, heat butter, sugar, treacle, cream and vanilla in a saucepan until melted and bubbling.",
+            "Pour half of the warm sauce over the baked pudding and serve with cream or ice cream."
+        ]
+    },
+    "7": {
+        "name": "Pear and Blueberry Galette",
+        "images": [],
+        "categories": [
+            "dessert",
+            "fruit",
+            "baked",
+            "vegetarian"
+        ],
+        "ingredients": [
+            {
+                "name": "Butter, softened",
+                "quantity": "75 g"
+            },
+            {
+                "name": "Caster sugar",
+                "quantity": "75 g"
+            },
+            {
+                "name": "Self‑raising flour",
+                "quantity": "115 g"
+            },
+            {
+                "name": "Baking powder",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Free‑range eggs",
+                "quantity": "2"
+            },
+            {
+                "name": "Vanilla extract",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Tinned pear halves in juice",
+                "quantity": "2 × 400 g tins"
+            },
+            {
+                "name": "Fresh blueberries",
+                "quantity": "150 g"
+            },
+            {
+                "name": "Redcurrant jelly",
+                "quantity": "2–3 tbsp"
+            },
+            {
+                "name": "Cream or crème fraîche",
+                "quantity": "to serve"
+            }
+        ],
+        "steps": [
+            "Preheat the oven and grease a fluted tart tin.",
+            "Mix butter, sugar, flour, baking powder, eggs and vanilla until smooth, then spread the batter over the base of the tin.",
+            "Drain the pears, slice each half into long strips and pat dry. Arrange them cut‑side down on the batter and scatter blueberries between them.",
+            "Bake until the sponge is risen and lightly golden.",
+            "Warm the redcurrant jelly until melted and brush it over the hot tart to glaze.",
+            "Allow to cool slightly, remove from the tin and serve in wedges with cream or crème fraîche."
+        ]
     }
 }
