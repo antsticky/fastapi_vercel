@@ -373,7 +373,12 @@
     },
     "6": {
         "name": "Mary Berry's Easy Sticky Toffee Pudding",
-        "images": [],
+        "images": [
+            "6/pudding.png",
+            "6/pudding2.png",
+            "6/pudding3.png",
+            "6/pudding4.png"
+        ],
         "categories": [
             "dessert",
             "pudding",
