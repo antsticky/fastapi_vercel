@@ -34,5 +34,13 @@
         ],
         "ingredients": [],
         "steps": []
+    },
+    "4": {
+        "name": "korte3",
+        "categories": [
+            "levesek"
+        ],
+        "ingredients": [],
+        "steps": []
     }
 }
