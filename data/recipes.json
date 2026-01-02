@@ -126,5 +126,95 @@
             "Reheat the strained broth until boiling, then pour it over the chicken mixture.",
             "Top with fresh coriander and serve warm."
         ]
+    },
+    "3": {
+        "name": "Express Lasagne",
+        "images": [],
+        "categories": [
+            "lasagne",
+            "pasta",
+            "baked",
+            "comfort food"
+        ],
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": "for greasing"
+            },
+            {
+                "name": "Dried lasagne sheets",
+                "quantity": "6 large"
+            },
+            {
+                "name": "Mature cheddar, grated",
+                "quantity": "75 g"
+            },
+            {
+                "name": "Oil",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Pork sausage meat",
+                "quantity": "450 g"
+            },
+            {
+                "name": "Plain flour",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Red chilli, finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "Garlic cloves, crushed",
+                "quantity": "2"
+            },
+            {
+                "name": "Chestnut mushrooms, sliced",
+                "quantity": "250 g"
+            },
+            {
+                "name": "Full‑fat crème fraîche",
+                "quantity": "200 ml"
+            },
+            {
+                "name": "Baby spinach, chopped",
+                "quantity": "100 g"
+            },
+            {
+                "name": "Salt and pepper",
+                "quantity": "to taste"
+            },
+            {
+                "name": "Passata",
+                "quantity": "500 g"
+            },
+            {
+                "name": "Sun‑dried tomato paste",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Light muscovado sugar",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Fresh thyme, chopped",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Fresh sage, chopped",
+                "quantity": "1 tbsp"
+            }
+        ],
+        "steps": [
+            "Preheat the oven and grease a shallow baking dish.",
+            "Soften the dried lasagne sheets in warm water while preparing the sauces.",
+            "For the pork and spinach sauce, brown the sausage meat in oil, then add flour, chilli, garlic and mushrooms. Stir in crème fraîche and spinach, simmer briefly, and season.",
+            "For the tomato sauce, mix passata with tomato paste, sugar, thyme and sage, seasoning to taste.",
+            "Drain the lasagne sheets.",
+            "Layer the dish with one‑third of the pork sauce, one‑third of the tomato sauce, and half the lasagne sheets. Repeat the layers, finishing with sauce.",
+            "Top with grated cheddar.",
+            "Bake until the pasta is tender and the top is golden and bubbling."
+        ]
     }
 }
