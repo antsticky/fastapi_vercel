@@ -4,6 +4,17 @@ from api.DataModels.recipe import Recipe
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 recipes_db: Dict[int, Recipe] = {}
 current_id = 1
 
