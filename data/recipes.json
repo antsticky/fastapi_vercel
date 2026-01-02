@@ -139,7 +139,9 @@
     },
     "3": {
         "name": "Express Lasagne",
-        "images": [],
+        "images": [
+            "3/lasagne.png"
+        ],
         "categories": [
             "lasagne",
             "pasta",
@@ -229,7 +231,10 @@
     },
     "4": {
         "name": "Paloma",
-        "images": [],
+        "images": [
+            "4/paloma.png",
+            "4/paloma2.png"
+        ],
         "categories": [
             "cocktail",
             "tequila",
@@ -285,7 +290,11 @@
     },
     "5": {
         "name": "Cuban Pork with Sticky Citrus Glaze",
-        "images": [],
+        "images": [
+            "5/pork.png",
+            "5/pork2.png",
+            "5/pork3.png"
+        ],
         "categories": [
             "pork",
             "caribbean",
