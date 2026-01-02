@@ -68,15 +68,70 @@ def sane():
 def ping():
     return {"message": "pong"}
 
+import base64
+import requests
+import json
+import os
+
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+REPO_OWNER = "antsticky"
+REPO_NAME = "fastapi_vercel"
+FILE_PATH = "data/recipes.json"
+
+API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/{FILE_PATH}"
+
+
+def update_github_file(new_data: dict, commit_message="Update recipes.json"):
+    # Convert dict → JSON → base64
+    print("Updating GitHub file...")
+    content = json.dumps(new_data, indent=4)
+    encoded = base64.b64encode(content.encode()).decode()
+
+    # Get the current file SHA (required for updates)
+    response = requests.get(API_URL, headers={
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json"
+    })
+
+    if response.status_code == 200:
+        sha = response.json()["sha"]
+    else:
+        sha = None  # file does not exist yet
+
+    payload = {
+        "message": commit_message,
+        "content": encoded,
+        "sha": sha
+    }
+
+    put_response = requests.put(API_URL, headers={
+        "Authorization": f"Bearer {GITHUB_TOKEN}",
+        "Accept": "application/vnd.github+json"
+    }, json=payload)
+
+    print(put_response.json())
+
+    return put_response.json()
+
 
 @app.post("/recipe")
 def create_recipe(recipe: Recipe):
     global current_id
     recipes_db[current_id] = recipe
+
+    # Save locally
     save_recipes()
+
+    # Push to GitHub
+    update_github_file(
+        {rid: r.dict() for rid, r in recipes_db.items()},
+        commit_message=f"Add recipe {current_id}"
+    )
+
     response = {"id": current_id, "message": "Recipe created successfully"}
     current_id += 1
     return response
+
 
 
 @app.get("/recipe/{recipe_id}")
