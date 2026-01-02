@@ -42,5 +42,14 @@
         ],
         "ingredients": [],
         "steps": []
+    },
+    "5": {
+        "name": "korte5",
+        "categories": [
+            "alma",
+            "szilva"
+        ],
+        "ingredients": [],
+        "steps": []
     }
 }
