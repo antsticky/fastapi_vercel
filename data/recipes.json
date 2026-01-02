@@ -216,5 +216,140 @@
             "Top with grated cheddar.",
             "Bake until the pasta is tender and the top is golden and bubbling."
         ]
+    },
+    "4": {
+        "name": "Paloma",
+        "images": [],
+        "categories": [
+            "cocktail",
+            "tequila",
+            "drinks",
+            "refreshing",
+            "vegan",
+            "gluten-free"
+        ],
+        "ingredients": [
+            {
+                "name": "Tequila",
+                "quantity": "100 ml"
+            },
+            {
+                "name": "Agave syrup",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Lime juice",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Grapefruit juice (red or pink)",
+                "quantity": "75 ml"
+            },
+            {
+                "name": "Sparkling water",
+                "quantity": "200 ml"
+            },
+            {
+                "name": "Ice cubes",
+                "quantity": "as needed"
+            },
+            {
+                "name": "Sea salt flakes (for rim)",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Grapefruit wedges",
+                "quantity": "2"
+            },
+            {
+                "name": "Rosemary sprigs (optional)",
+                "quantity": "2"
+            }
+        ],
+        "steps": [
+            "Combine tequila, agave syrup, lime juice and grapefruit juice in a cocktail shaker with plenty of ice. Shake until well chilled.",
+            "Rub grapefruit wedges around the rims of two tall glasses and dip them into sea salt to coat.",
+            "Fill the glasses with ice cubes, pour in the shaken mixture and top with sparkling water.",
+            "Stir gently and garnish with grapefruit wedges and rosemary sprigs if desired."
+        ]
+    },
+    "5": {
+        "name": "Cuban Pork with Sticky Citrus Glaze",
+        "images": [],
+        "categories": [
+            "pork",
+            "caribbean",
+            "latin american",
+            "roast",
+            "citrus"
+        ],
+        "ingredients": [
+            {
+                "name": "Pork shoulder, skinless and boneless",
+                "quantity": "600 g"
+            },
+            {
+                "name": "Vegetable stock",
+                "quantity": "50 ml"
+            },
+            {
+                "name": "Seville orange marmalade",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Rice or tortilla wraps",
+                "quantity": "to serve"
+            },
+            {
+                "name": "Oranges (zest, juice, and squeezed shells)",
+                "quantity": "2 large"
+            },
+            {
+                "name": "Grapefruit, juice only",
+                "quantity": "1"
+            },
+            {
+                "name": "Limes (juice + shells)",
+                "quantity": "2"
+            },
+            {
+                "name": "Oregano, dried or fresh",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Ground cumin",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Garlic cloves, peeled",
+                "quantity": "6"
+            },
+            {
+                "name": "Soy sauce",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Olive oil",
+                "quantity": "1 tbsp"
+            },
+            {
+                "name": "Freshly ground black pepper",
+                "quantity": "2 tbsp"
+            },
+            {
+                "name": "Sea salt",
+                "quantity": "pinch"
+            }
+        ],
+        "steps": [
+            "Blend the citrus juices, zest, garlic, spices, soy sauce and oil to make a marinade.",
+            "Place the pork in a bowl, pour over the marinade and add the squeezed citrus shells. Chill for at least 20 minutes or overnight.",
+            "Bring the pork to room temperature and preheat the oven to a low heat.",
+            "Set the pork on foil in a roasting tin, spoon over half the marinade and seal the foil loosely. Roast for 1 hour.",
+            "Increase the oven temperature, open the foil and baste the pork. Roast uncovered until browned and very tender, turning halfway through.",
+            "Let the pork rest under the foil for 10 minutes.",
+            "Simmer the remaining marinade with vegetable stock and marmalade until thick and glossy.",
+            "Pour the sticky glaze over the pork, shred the meat and serve with rice or warm tortillas."
+        ]
     }
 }
