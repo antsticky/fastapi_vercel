@@ -93,30 +93,46 @@ def load_recipes_from_github():
 
 
 def save_recipes_to_github():
-    content = json.dumps(
-        {rid: recipe.dict() for rid, recipe in recipes_db.items()},
-        indent=4
-    )
-    encoded = base64.b64encode(content.encode()).decode()
+    try:
+        content = json.dumps(
+            {rid: recipe.dict() for rid, recipe in recipes_db.items()},
+            indent=4
+        )
+        encoded = base64.b64encode(content.encode()).decode()
 
-    headers = {
-        "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "Accept": "application/vnd.github+json"
-    }
+        headers = {
+            "Authorization": f"Bearer {GITHUB_TOKEN}",
+            "Accept": "application/vnd.github+json"
+        }
 
-    # Get SHA for update
-    sha = None
-    sha_response = requests.get(API_URL, headers=headers)
-    if sha_response.status_code == 200:
-        sha = sha_response.json()["sha"]
+        # Get SHA if file exists
+        sha = None
+        sha_response = requests.get(API_URL, headers=headers)
+        print("GitHub SHA status:", sha_response.status_code)
 
-    payload = {
-        "message": "Update recipes.json",
-        "content": encoded,
-        "sha": sha
-    }
+        if sha_response.status_code == 200:
+            sha_data = sha_response.json()
+            sha = sha_data.get("sha")
+            print("Existing SHA:", sha)
+        else:
+            print("SHA lookup failed:", sha_response.text)
 
-    return requests.put(API_URL, headers=headers, json=payload).json()
+        payload = {
+            "message": "Update recipes.json",
+            "content": encoded,
+            "sha": sha
+        }
+
+        put_response = requests.put(API_URL, headers=headers, json=payload)
+        print("GitHub PUT status:", put_response.status_code)
+        print("GitHub PUT response:", put_response.text)
+
+        return put_response.json()
+
+    except Exception as e:
+        print("Exception while saving to GitHub:", e)
+        return {"error": str(e)}
+
 
 
 # Load recipes at cold start
