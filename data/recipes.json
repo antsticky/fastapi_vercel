@@ -53,59 +53,9 @@
         "steps": []
     },
     "6": {
-        "name": "Test Recipe",
-        "categories": [
-            "zsemle"
-        ],
+        "name": "long long long lpong long long",
+        "categories": [],
         "ingredients": [],
-        "steps": []
-    },
-    "7": {
-        "name": "Long Long Long Long Title",
-        "categories": [
-            "cat1",
-            "cat2",
-            "cat3",
-            "cat4"
-        ],
-        "ingredients": [
-            {
-                "name": "alma",
-                "quantity": "1 db"
-            },
-            {
-                "name": "korte",
-                "quantity": "2 db"
-            },
-            {
-                "name": "szilva",
-                "quantity": "3 db"
-            },
-            {
-                "name": "eper",
-                "quantity": "4 db"
-            },
-            {
-                "name": "kutya",
-                "quantity": "1 db"
-            },
-            {
-                "name": "macska",
-                "quantity": "2 db"
-            },
-            {
-                "name": "hintalo",
-                "quantity": "1 db"
-            },
-            {
-                "name": "tojas",
-                "quantity": "2 db"
-            },
-            {
-                "name": "lisz",
-                "quantity": "1 kg"
-            }
-        ],
         "steps": []
     }
 }
