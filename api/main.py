@@ -59,18 +59,37 @@ def load_recipes_from_github():
         "Accept": "application/vnd.github+json"
     }
 
-    response = requests.get(API_URL, headers=headers)
+    try:
+        response = requests.get(API_URL, headers=headers)
+        print("GitHub GET status:", response.status_code)
 
-    if response.status_code == 200:
-        content = response.json()["content"]
-        decoded = base64.b64decode(content).decode()
-        raw = json.loads(decoded)
-    else:
+        # If GitHub returns 200 and contains "content"
+        if response.status_code == 200:
+            data = response.json()
+            if "content" in data:
+                decoded = base64.b64decode(data["content"]).decode()
+                raw = json.loads(decoded)
+                print("Loaded recipes from GitHub:", raw)
+            else:
+                print("GitHub response missing 'content':", data)
+                raw = {}
+        else:
+            print("GitHub GET error:", response.text)
+            raw = {}
+
+    except Exception as e:
+        print("Exception while loading from GitHub:", e)
         raw = {}
 
-    recipes_db = {int(k): Recipe(**v) for k, v in raw.items()}
+    # Convert to Pydantic models
+    try:
+        recipes_db = {int(k): Recipe(**v) for k, v in raw.items()}
+    except Exception as e:
+        print("Error parsing recipes:", e)
+        recipes_db = {}
 
     current_id = max(recipes_db.keys(), default=0) + 1
+
 
 
 def save_recipes_to_github():
