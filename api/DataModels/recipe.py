@@ -10,5 +10,5 @@ class Recipe(BaseModel):
     categories: List[str]
     ingredients: List[IngredientsItem]
     steps: List[str]
-    images: Optional[List[str]]
+    images: Optional[List[str]] = None
     

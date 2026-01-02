@@ -1,183 +1,130 @@
 {
     "1": {
-        "name": "Pancakes",
+        "name": "Chocolate Orange Cake",
         "images": [],
         "categories": [
-            "breakfast"
+            "dessert",
+            "cake",
+            "chocolate"
         ],
         "ingredients": [
             {
-                "name": "Flour",
-                "quantity": "2 cups"
+                "name": "Cocoa powder",
+                "quantity": "75 g"
+            },
+            {
+                "name": "Boiling water",
+                "quantity": "6 tbsp"
+            },
+            {
+                "name": "Oranges (zest + juice)",
+                "quantity": "2 medium"
+            },
+            {
+                "name": "Unsalted butter",
+                "quantity": "225 g"
+            },
+            {
+                "name": "Caster sugar",
+                "quantity": "225 g"
+            },
+            {
+                "name": "Eggs",
+                "quantity": "4 large"
+            },
+            {
+                "name": "Self‑raising flour",
+                "quantity": "225 g"
+            },
+            {
+                "name": "Baking powder",
+                "quantity": "1 tsp"
+            },
+            {
+                "name": "Double cream",
+                "quantity": "300 ml"
+            },
+            {
+                "name": "Dark chocolate",
+                "quantity": "300 g"
             },
             {
                 "name": "Milk",
-                "quantity": "1 cup"
+                "quantity": "2–3 tbsp"
             }
         ],
         "steps": [
-            "Mix ingredients",
-            "Cook on pan"
+            "Prepare two 20 cm sandwich tins and preheat the oven.",
+            "Mix cocoa powder with hot water and orange juice to form a paste.",
+            "Combine butter, sugar, eggs, flour, baking powder, cocoa, and orange zest into a smooth batter.",
+            "Divide into tins and bake until risen.",
+            "Cool the sponges completely.",
+            "Make candied orange zest by simmering strips of zest in sugar syrup.",
+            "Heat cream and pour over chopped chocolate to make ganache.",
+            "Assemble the cake with a layer of ganache in the middle.",
+            "Cover the cake with the remaining ganache and decorate with candied zest."
         ]
     },
     "2": {
-        "name": "korte123",
-        "categories": [
-            "ealma"
-        ],
-        "ingredients": [],
-        "steps": []
-    },
-    "3": {
-        "name": "korte2",
-        "categories": [
-            "almla"
-        ],
-        "ingredients": [],
-        "steps": []
-    },
-    "4": {
-        "name": "korte3",
-        "categories": [
-            "levesek"
-        ],
-        "ingredients": [],
-        "steps": []
-    },
-    "5": {
-        "name": "korte5",
-        "categories": [
-            "alma",
-            "szilva"
-        ],
-        "ingredients": [],
-        "steps": []
-    },
-    "6": {
-        "name": "long long long lpong long long",
-        "categories": [],
-        "ingredients": [],
-        "steps": []
-    },
-    "7": {
-        "name": "Long Long Long Long Long Long Long Long",
+        "name": "Chicken, Lime and Lemongrass Soup",
         "images": [],
         "categories": [
-            "aa",
-            "bb",
-            "cc"
+            "soup",
+            "chicken",
+            "asian-inspired",
+            "light",
+            "healthy"
         ],
         "ingredients": [
             {
-                "name": "alma",
-                "quantity": "1 db"
+                "name": "Fresh chicken stock",
+                "quantity": "2 litres"
             },
             {
-                "name": "szilva",
-                "quantity": "2 db"
+                "name": "Lemongrass stalks",
+                "quantity": "2, bruised"
             },
             {
-                "name": "alma2",
-                "quantity": "1 db"
+                "name": "Galangal",
+                "quantity": "4 slices"
             },
             {
-                "name": "szilva2",
-                "quantity": "2 db"
+                "name": "Thai shallots",
+                "quantity": "9 (3 whole, 6 sliced)"
             },
             {
-                "name": "alma3",
-                "quantity": "1 db"
+                "name": "Chicken breasts",
+                "quantity": "2"
             },
             {
-                "name": "szilva3",
-                "quantity": "2 db"
+                "name": "Lime juice",
+                "quantity": "6 tbsp"
             },
             {
-                "name": "alma4",
-                "quantity": "1 db"
+                "name": "Fish sauce",
+                "quantity": "3–4 tbsp"
             },
             {
-                "name": "szilva4",
-                "quantity": "2 db"
+                "name": "Bird's-eye chillies",
+                "quantity": "pinch, finely chopped"
             },
             {
-                "name": "alma5",
-                "quantity": "1 db"
+                "name": "Finely chopped lemongrass",
+                "quantity": "1 tbsp"
             },
             {
-                "name": "szilva5",
-                "quantity": "2 db"
-            },
-            {
-                "name": "alma6",
-                "quantity": "1 db"
-            },
-            {
-                "name": "szilva6",
-                "quantity": "2 db"
-            },
-            {
-                "name": "alma7",
-                "quantity": "1 db"
-            },
-            {
-                "name": "szilva7",
-                "quantity": "2 db"
-            },
-            {
-                "name": "alma8",
-                "quantity": "1 db"
-            },
-            {
-                "name": "szilva8",
-                "quantity": "2 db"
-            },
-            {
-                "name": "alma9",
-                "quantity": "1 db"
-            },
-            {
-                "name": "szilva9",
-                "quantity": "2 db"
-            },
-            {
-                "name": "alma10",
-                "quantity": "1 db"
-            },
-            {
-                "name": "szilva10",
-                "quantity": "2 db"
+                "name": "Fresh coriander",
+                "quantity": "1 handful, chopped"
             }
         ],
-        "steps": []
-    },
-  "8": {
-    "name": "Chocolate Orange Cake",
-    "images": [],
-    "categories": ["dessert", "cake", "chocolate"],
-    "ingredients": [
-      { "name": "Cocoa powder", "quantity": "75 g" },
-      { "name": "Boiling water", "quantity": "6 tbsp" },
-      { "name": "Oranges (zest + juice)", "quantity": "2 medium" },
-      { "name": "Unsalted butter", "quantity": "225 g" },
-      { "name": "Caster sugar", "quantity": "225 g" },
-      { "name": "Eggs", "quantity": "4 large" },
-      { "name": "Self‑raising flour", "quantity": "225 g" },
-      { "name": "Baking powder", "quantity": "1 tsp" },
-      { "name": "Double cream", "quantity": "300 ml" },
-      { "name": "Dark chocolate", "quantity": "300 g" },
-      { "name": "Milk", "quantity": "2–3 tbsp" }
-    ],
-    "steps": [
-      "Prepare two 20 cm sandwich tins and preheat the oven.",
-      "Mix cocoa powder with hot water and orange juice to form a paste.",
-      "Combine butter, sugar, eggs, flour, baking powder, cocoa, and orange zest into a smooth batter.",
-      "Divide into tins and bake until risen.",
-      "Cool the sponges completely.",
-      "Make candied orange zest by simmering strips of zest in sugar syrup.",
-      "Heat cream and pour over chopped chocolate to make ganache.",
-      "Assemble the cake with a layer of ganache in the middle.",
-      "Cover the cake with the remaining ganache and decorate with candied zest."
-    ]
-  }
+        "steps": [
+            "Bring the chicken stock to a boil in a large pan, then simmer until reduced by half.",
+            "Add the bruised lemongrass, galangal slices, and whole shallots. Simmer for about 10 minutes.",
+            "Place the chicken breasts into the broth, cover, and cook gently until fully cooked. Remove and shred the meat.",
+            "Strain the broth, keeping the liquid and discarding the aromatics.",
+            "Divide the shredded chicken between two bowls. Add lime juice, fish sauce, sliced shallots, chopped chillies, and finely chopped lemongrass. Let it rest for 20 minutes.",
+            "Reheat the strained broth until boiling, then pour it over the chicken mixture.",
+            "Top with fresh coriander and serve warm."
+        ]
+    }
 }
