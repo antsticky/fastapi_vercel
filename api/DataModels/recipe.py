@@ -6,6 +6,7 @@ class IngredientsItem(BaseModel):
     quantity: str
 
 class Recipe(BaseModel):
+    name: str
     categories: List[str]
     ingredients: List[IngredientsItem]
     steps: List[str]
