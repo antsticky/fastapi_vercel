@@ -18,21 +18,5 @@
             "Mix ingredients",
             "Cook on pan"
         ]
-    },
-    "2": {
-        "name": "alma",
-        "categories": [
-            "korte"
-        ],
-        "ingredients": [],
-        "steps": []
-    },
-    "3": {
-        "name": "eperszolva",
-        "categories": [
-            "kkk"
-        ],
-        "ingredients": [],
-        "steps": []
     }
 }
