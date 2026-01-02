@@ -1,7 +1,11 @@
 {
     "1": {
         "name": "Chocolate Orange Cake",
-        "images": ["1/chocolate.png"],
+        "images": [
+            "1/chocolate.png",
+            "1/chocolate2.png",
+            "1/chocolate3.png"
+        ],
         "categories": [
             "dessert",
             "cake",
@@ -67,7 +71,13 @@
     },
     "2": {
         "name": "Chicken, Lime and Lemongrass Soup",
-        "images": [],
+        "images": [
+            "2/soup.png",
+            "2/soup2.png",
+            "2/soup3.png",
+            "2/soup4.png",
+            "2/soup5.png"
+        ],
         "categories": [
             "soup",
             "chicken",
