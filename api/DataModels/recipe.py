@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Optional
 from pydantic import BaseModel
 
 class IngredientsItem(BaseModel):
@@ -10,3 +10,5 @@ class Recipe(BaseModel):
     categories: List[str]
     ingredients: List[IngredientsItem]
     steps: List[str]
+    images: Optional[List[str]]
+    
