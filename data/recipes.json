@@ -18,5 +18,13 @@
             "Mix ingredients",
             "Cook on pan"
         ]
+    },
+    "2": {
+        "name": "korte123",
+        "categories": [
+            "ealma"
+        ],
+        "ingredients": [],
+        "steps": []
     }
 }
