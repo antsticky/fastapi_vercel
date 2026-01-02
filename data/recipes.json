@@ -1,0 +1,11 @@
+{
+  "1": {
+    "name": "Pancakes",
+    "categories": ["breakfast"],
+    "ingredients": [
+      { "name": "Flour", "quantity": "2 cups" },
+      { "name": "Milk", "quantity": "1 cup" }
+    ],
+    "steps": ["Mix ingredients", "Cook on pan"]
+  }
+}
