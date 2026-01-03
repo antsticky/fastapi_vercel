@@ -159,40 +159,30 @@ def create_recipe(recipe: Recipe):
 @app.get("/about")
 def get_about_page():
     return {
-  "title": "About This Project",
-  "heroImage": "/about/cooking.png",
-  "sections": [
-    {
-      "title": "What Is This Site?",
-      "paragraphs": [
-        "This website collects the best recipes we’ve cooked and enjoyed over the years. Every dish here has been tested in our own kitchen — nothing random, nothing untried.",
-        "It’s a small, personal cookbook that keeps growing as we discover new favorites."
-      ]
-    },
-    {
-      "title": "Technology Behind the Project",
-      "paragraphs": [
-        "This site is built with Next.js and powered by a lightweight FastAPI backend. It’s hosted on Vercel using the free tier — perfect for a hobby project like this.",
-        "The goal is simple: learn modern web development while building something useful and enjoyable."
-      ]
-    },
-    {
-      "title": "About Me",
-      "paragraphs": [
-        "I’m a passionate home cook and a curious developer. This project combines both: a love for good food and a desire to learn new technologies.",
-        "When I’m not experimenting with recipes or code, I enjoy exploring new cuisines and tweaking UI layouts."
-      ]
-    },
-    {
-      "title": "Contact",
-      "paragraphs": ["You can reach me here:"],
-      "contact": {
-        "email": "antsticky@gmail.com",
-        "github": "https://github.com/antsticky",
-        "location": "Budapest, Hungary"
-      }
+        "title": "About This Project",
+        "heroImage": "/about/cooking.png",
+        "sections": [
+            {
+                "title": "What Is This Site?",
+                "paragraphs": [
+                    "This website collects the best recipes we’ve cooked and enjoyed over the years. Every dish here has been [highlight]tested in our own kitchen[/highlight] — nothing random, nothing untried.",
+                    "It’s a small, personal cookbook that keeps growing as we discover new favorites."
+                ]
+            },
+            {
+                "title": "Technology Behind the Project",
+                "paragraphs": [
+                    "This site is built with Next.js and powered by a lightweight [highlight]FastAPI[/highlight] backend.",
+                    "It’s hosted on [highlight]Vercel[/highlight] using the free tier — perfect for a hobby project like this."
+                ]
+            },
+            {
+                "title": "About Me",
+                "paragraphs": [
+                    "I’m a passionate [highlight]home cook and a curious developer[/highlight].",
+                    "When I’m not experimenting with recipes or code, I enjoy exploring new cuisines and tweaking UI layouts."
+                ]
+            }
+        ],
+        "footerNote": "Thanks for visiting — hope you find something delicious to cook!"
     }
-  ],
-  "footerNote": "Thanks for visiting — hope you find something delicious to cook!"
-}
-
